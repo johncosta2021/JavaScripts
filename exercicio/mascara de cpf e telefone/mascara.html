@@ -1,0 +1,31 @@
+<script>
+      // function mascara_cpf(){
+      //   var cpf = document.getElementById('cpf1')
+      //   if (cpf.value.length == 3 || cpf.value.length == 7){
+      //     cpf.value += "."
+      //   }
+      //    else if (cpf.value.length == 11){
+      //      cpf.value += "-"
+      //    }
+         
+      // }
+      function mascara_cpf(){
+        var cpf = document.getElementById('cpf1')
+        if (cpf.value.length == 0 ){
+          cpf.value += "("
+        }
+         else {
+          if (cpf.value.length == 3){
+           cpf.value += ")"
+        } if (cpf.value.length == 9){
+           cpf.value += "-"
+        }
+           } 
+         
+      }
+    </script>
+
+
+
+CPF: <br>
+          <input type="text" name="cpf" id="cpf1" maxlength="14" class="form-control" placeholder="ex: 999.999.999-99" id="cpf" onkeypress="mascara_cpf()" autocomplete="off">
