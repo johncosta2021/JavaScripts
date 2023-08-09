@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("qual é o seu nome? ")
+        var salário = Number(prompt("Qual é o seu salário: "))
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br>`) 
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}<br>`)
+
+        
+        document.write(`SALÁRIO: ${salário.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+
+        /*Dicas
+        Transformando um numero em real brasileiro
+        
+        salário.toLocaleString('pt-br', {style: 'currency', currency: 'BRL' OU USD})
+        */
+    </script>
+</body>
+</html>
