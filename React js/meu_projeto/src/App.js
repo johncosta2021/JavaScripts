@@ -1,12 +1,11 @@
-import Condicional from "./componentes/condicional"
+//import "./App.css"
+import React from "react"
+import Aula_15 from "./CFB_cursos/aula_15/aula_15"
 
-function App(){
-    return (
+export default function App(){
+    return(
         <>
-        <h1>olá</h1>
-        <Condicional></Condicional>
+        <Aula_15/>
         </>
     )
 }
-
-export default App
