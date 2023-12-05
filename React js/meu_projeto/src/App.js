@@ -1,11 +1,10 @@
 //import "./App.css"
-import React from "react"
-import Aula_15 from "./CFB_cursos/aula_15/aula_15"
+import Aula_30 from "./CFB_cursos/aula_30/aula_30"
 
 export default function App(){
     return(
         <>
-        <Aula_15/>
+        <Aula_30/>
         </>
     )
 }
