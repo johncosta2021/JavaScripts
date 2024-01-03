@@ -1,8 +1,8 @@
 import React,{useState} from "react";
 
 const tabelaIMC=()=>{
-    return(
-        <table border="1" style={{padding:"30",borderCollapse:"collapse"}}>
+return(
+    <table border="1" style={{borderCollapse:"collapse"}}>
             <thead>
                 <tr>
                     <th>Classificação</th>
@@ -59,20 +59,40 @@ const faltura=(a,sa)=>{
     )
 }
 
-const fCalcular=()=>{
+const fCalcular=(p,a,sr)=>{
     const calc=()=>{
-        
+        sr(p/(a*a))
     }
+    return(
+        <div>
+            <button onClick={calc}>Calcular</button>
+        </div>
+    )
+}
+
+const fresultado=(r)=>{
+    return(
+        <div>
+            <p>Resultado: {r.toFixed(2)}</p>
+        </div>
+    )
 }
 
 function Aula_30(){
 
     const [peso,setPeso]=useState(0)
     const [altura,setAltura]=useState(0)
+    const [resultado,setResultado]=useState(0)
+
 
     return(
         <>
             {tabelaIMC()}
+            {faltura(altura,setAltura)}
+            {fCalcular(peso,altura,setResultado)}
+            {fpeso(peso,setPeso)}
+            {fresultado(resultado)}
+
         </>
     )
 }

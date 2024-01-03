@@ -1,10 +1,10 @@
 //import "./App.css"
-import Aula_30 from "./CFB_cursos/aula_30/aula_30"
+import Aula_33 from "./CFB_cursos/aula_33/aula_33"
 
 export default function App(){
     return(
         <>
-        <Aula_30/>
+        <Aula_33/>
         </>
     )
 }
